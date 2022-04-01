@@ -20,101 +20,72 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-
-/* header */
-.bgd-header {
-  background-color: var(--header-bg-color);
-}
-/* Цвета логотипа */
-.logo {
-  text-decoration: none;
+/* сброс стилей */
+p, h1, h2, h3, h4, h5, h6, {
+  margin: 0;
 }
 
-.logo-footer {
-  text-decoration: none;
+ul, ol {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
 }
 
-.logo-footer .web {
-  color: var(--accent-color);
-
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
 }
 
-.logo-footer .studio {
-  color: var(--white-text-color);
-
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
-
-.logo .web {
-  color: var(--accent-color);
-
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
-
-.logo .studio {
-  color: #000000;
-
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
-
-/* убрать маркеры на всех списках*/
 .list {
   list-style: none;
 }
 
-/* site-nav */
+/* ___________________________________HEADER____________________________________________ */
+
+.bgd-header {
+  background-color: var(--header-bg-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.logo {
+  text-decoration: none;
+}
 
 .site-nav .link-contact {
   color: var(--title-text-color);
-
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   text-decoration: none;
 }
 
 .site-contacts .link-contact {
   color: var(--primary-text-color);
-
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   text-decoration: none;
 }
 
-/* ховер ифокус для навигации сайта */
+.site-contacts .address:hover,
+.site-contacts .address:hover {
+  color: var(--accent-color);
+}
 
 .link-contact:hover,
 .link-contact:focus {
   color: var(--accent-color);
 }
 
-/* цвет активной страницы */
-
-.site-nav .curent {
-  color: var(--accent-color);
-}
-
-/* hero */
+/* ___________________________________HERO____________________________________________ */
 
 .hero-title {
   color: var(--white-text-color);
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -122,8 +93,11 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+.site-nav .curent {
+  color: var(--accent-color);
+}
+/* ___________________________________FEATURE____________________________________________ */
 
-/* особенности */
 .section-title {
   color: var(--title-text-color);
 
@@ -135,7 +109,6 @@ body {
 
 .feature-title {
   color: var(--title-text-color);
-
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -146,10 +119,9 @@ body {
   line-height: 1.71;
 }
 
-/* team */
+/* ___________________________________TEAM____________________________________________ */
 .team .title {
   color: var(--title-text-color);
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -160,34 +132,52 @@ body {
   line-height: 1.19;
 }
 
-/* footer */
+/* ___________________________________FOOTER____________________________________________ */
+
 .bgd-footer {
   background-color: var(--futter-bg-color);
 }
+
+.logo-footer {
+  text-decoration: none;
+}
+
+.logo-footer .web {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo-footer .studio {
+  color: var(--white-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo .web {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo .studio {
+  color: #000000;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
 .site-contacts .address {
   color: var(--white-text-color);
-
   line-height: 1.71;
-
   text-decoration: none;
-}
-
-.site-contacts .address:hover,
-.site-contacts .address:hover {
-  color: var(--accent-color);
-}
-
-.site-contacts .mailto,
-.site-contacts .tel {
-  color: rgba(255, 255, 255, 0.6);
-
-  line-height: 1.71;
-
-  text-decoration: none;
-}
-.site-contacts .tel:hover,
-.site-contacts .tel:focus {
-  color: var(--accent-color);
 }
 
 .site-contacts .mailto:hover,
@@ -195,15 +185,22 @@ body {
   color: var(--accent-color);
 }
 
-/* СТРАНИЦА portfolio.html */
-/* надо скрыть */
-.portfolio .title {
-  color: var(--title-text-color);
+.site-contacts .tel:hover,
+.site-contacts .tel:focus {
+  color: var(--accent-color);
 }
+
+.site-contacts .mailto,
+.site-contacts .tel {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+/* _____________________СТРАНИЦА portfolio.html_____________________________________*/
 
 .project .title {
   color: var(--title-text-color);
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
