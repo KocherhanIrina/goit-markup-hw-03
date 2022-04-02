@@ -21,14 +21,22 @@ body {
   letter-spacing: 0.03em;
 }
 /* сброс стилей */
-p, h1, h2, h3, h4, h5, h6, {
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
   margin: 0;
+  padding: 0;
 }
 
 ul, ol {
   margin: 0;
-  padding-left: 0;
+  padding: 0;
 }
+
 button {
   cursor: pointer;
 }
@@ -45,13 +53,27 @@ button {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* ___________________________________HEADER____________________________________________ */
 
-.bgd-header {
+.header {
   background-color: var(--header-bg-color);
   padding-top: 24px;
   padding-bottom: 25px;
 }
+
 .logo {
   text-decoration: none;
 }
@@ -81,8 +103,14 @@ button {
 .link-contact:focus {
   color: var(--accent-color);
 }
-
+.site-nav .curent {
+  color: var(--accent-color);
+}
 /* ___________________________________HERO____________________________________________ */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 
 .hero-title {
   color: var(--white-text-color);
@@ -92,20 +120,14 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
-.site-nav .curent {
-  color: var(--accent-color);
-}
+
 /* ___________________________________FEATURE____________________________________________ */
 
-.section-title {
-  color: var(--title-text-color);
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
 
 .feature-title {
   color: var(--title-text-color);
@@ -113,18 +135,54 @@ button {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .feature .text {
   line-height: 1.71;
 }
+.feature {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* ___________________________________WORK____________________________________________ */
+.work-title{
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
 
+}
+.work {
+padding-top: 94px;
+padding-bottom: 94px;
+}
 /* ___________________________________TEAM____________________________________________ */
-.team .title {
+
+.team-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 124px;
+}
+
+.team-item-title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team .text {
@@ -134,8 +192,11 @@ button {
 
 /* ___________________________________FOOTER____________________________________________ */
 
-.bgd-footer {
+.footer {
   background-color: var(--futter-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  }
 }
 
 .logo-footer {
@@ -198,20 +259,21 @@ button {
 }
 
 /* _____________________СТРАНИЦА portfolio.html_____________________________________*/
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 114px;
+}
 
-.project .title {
+.project-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
-.project .text {
-  font-size: 16px;
-  line-height: 1.88;
-}
-
-.portfolio .text {
+.project-text {
   font-size: 16px;
   line-height: 1.88;
 }
@@ -220,14 +282,12 @@ button {
 .button {
   color: var(--white-text-color);
   background-color: var(--accent-color);
-
   font-family: inherit;
 }
 
 .button.primary {
   background-color: var(--accent-color);
   color: var(--white-text-color);
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -235,17 +295,21 @@ button {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-
   cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
 }
 
-.button.secondary {
+.secondary-btn {
   color: var(--title-text-color);
   background-color: var(--button-bg-color);
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  margin-bottom: 50px;
 }
 
 /* ховер и фокус для списка кнопок */
