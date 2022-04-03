@@ -181,8 +181,10 @@ padding-bottom: 94px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  margin-top: 30px;
   margin-bottom: 10px;
+}
+.team-item-wrap {
+  margin-top: 30px;
 }
 
 .team .text {
@@ -197,7 +199,7 @@ padding-bottom: 94px;
   padding-top: 60px;
   padding-bottom: 60px;
   }
-}
+
 
 .logo-footer {
   text-decoration: none;
@@ -264,13 +266,15 @@ padding-bottom: 94px;
   padding-bottom: 114px;
 }
 
+.portfolio-item-wrap {
+margin-top: 20px;
+}
 .project-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 20px;
   margin-bottom: 4px;
 }
 .project-text {
