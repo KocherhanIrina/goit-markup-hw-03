@@ -112,7 +112,7 @@ button {
   align-items: center;
   margin-left: 93px;
 }
-.site-contacts {
+.contacts-list {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -125,6 +125,7 @@ button {
 .header-item:not(:last-child) {
   margin-right: 50px;
 }
+
 /* ___________________________________HERO____________________________________________ */
 .hero {
   background-color: #2f303a;
