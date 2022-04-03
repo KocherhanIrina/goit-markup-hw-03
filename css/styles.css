@@ -46,9 +46,8 @@ button {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
-
+/* outline: 1px solid red; */
 .list {
   list-style: none;
 }
@@ -76,6 +75,7 @@ button {
 
 .logo {
   text-decoration: none;
+  margin-right: 93px;
 }
 
 .site-nav .link-contact {
@@ -106,8 +106,28 @@ button {
 .site-nav .curent {
   color: var(--accent-color);
 }
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+}
+.site-contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.site-nav-flex {
+  display: flex;
+  align-items: center;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
 /* ___________________________________HERO____________________________________________ */
 .hero {
+  background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -127,7 +147,10 @@ button {
 
 /* ___________________________________FEATURE____________________________________________ */
 
-
+.feature-list {
+  display: flex;
+  justify-content: center;
+}
 
 .feature-title {
   color: var(--title-text-color);
@@ -145,6 +168,9 @@ button {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.feature-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* ___________________________________WORK____________________________________________ */
 .work-title{
   color: var(--title-text-color);
@@ -160,8 +186,19 @@ button {
 padding-top: 94px;
 padding-bottom: 94px;
 }
-/* ___________________________________TEAM____________________________________________ */
+.work-list {
+  display: flex;
+  justify-content: center;
+}
+.work-item:not(:last-child) {
+  margin-right: 30px;
 
+}
+/* ___________________________________TEAM____________________________________________ */
+.container > .team {
+  display: flex;
+  justify-content: center;
+}
 .team-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -191,7 +228,9 @@ padding-bottom: 94px;
   font-size: 16px;
   line-height: 1.19;
 }
-
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* ___________________________________FOOTER____________________________________________ */
 
 .footer {
@@ -267,7 +306,12 @@ padding-bottom: 94px;
 }
 
 .portfolio-item-wrap {
-margin-top: 20px;
+
+border: 1px solid #EEEEEE;
+box-sizing: border-box;
+}
+.portfolio-item {
+  margin-right: 30px;
 }
 .project-title {
   color: var(--title-text-color);
@@ -277,11 +321,19 @@ margin-top: 20px;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .project-text {
   font-size: 16px;
   line-height: 1.88;
 }
-
+.button-list {
+  display: flex;
+  justify-content: center;
+}
 /* Стилизация кнопок  */
 .button {
   color: var(--white-text-color);
@@ -314,7 +366,12 @@ margin-top: 20px;
   font-size: 16px;
   line-height: 1.62;
   margin-bottom: 50px;
+  border-radius: 4px;
 }
+.button-item {
+  margin-right: 8px;
+}
+
 
 /* ховер и фокус для списка кнопок */
 .list .link:hover,
