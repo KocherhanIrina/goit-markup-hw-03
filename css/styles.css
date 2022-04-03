@@ -314,6 +314,7 @@ padding-bottom: 94px;
 .portfolio-item-wrap {
 border: 1px solid #EEEEEE;
 box-sizing: border-box;
+margin-bottom: 30px;
 }
 .portfolio-item {
   margin-right: 30px;
