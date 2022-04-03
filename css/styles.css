@@ -239,10 +239,15 @@ padding-bottom: 94px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 30px;
   margin-bottom: 10px;
+  text-align: center;
 }
 .team-item-wrap {
   margin-top: 30px;
+}
+.team-text {
+  text-align: center;
 }
 
 .team-item {
@@ -251,6 +256,7 @@ padding-bottom: 94px;
 .team .text {
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 30px;
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
@@ -353,7 +359,9 @@ margin-bottom: 30px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 20px;
   margin-bottom: 4px;
+  text-align: center;
 }
 .project-list {
   display: flex;
@@ -363,6 +371,8 @@ margin-bottom: 30px;
 .project-text {
   font-size: 16px;
   line-height: 1.88;
+  margin-bottom: 20px;
+  text-align: center;
 }
 /* Стилизация кнопок  */
 .button-list {
