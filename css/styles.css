@@ -76,7 +76,6 @@ button {
 
 .logo {
   text-decoration: none;
-  margin-right: 93px;
 }
 
 .site-nav .link-contact {
@@ -169,7 +168,6 @@ button {
 
 .feature-list {
   display: flex;
-  justify-content: center;
 }
 
 .feature-title {
