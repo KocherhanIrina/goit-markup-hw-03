@@ -184,7 +184,10 @@ button {
 }
 .feature {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 47px;
+}
+.feature-item {
+  width: 270px;
 }
 .feature-item:not(:last-child) {
   margin-right: 30px;
@@ -201,7 +204,7 @@ button {
 
 }
 .work {
-padding-top: 94px;
+padding-top: 47px;
 padding-bottom: 94px;
 }
 .work-list {
@@ -213,7 +216,7 @@ padding-bottom: 94px;
 
 }
 /* ___________________________________TEAM____________________________________________ */
-.container > .team {
+.team-list {
   display: flex;
   justify-content: center;
 }
@@ -333,7 +336,7 @@ padding-bottom: 94px;
 .contakts-footer {
   margin-top: 20px;
 }
-.foter-item {
+.foter-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -397,6 +400,10 @@ margin-bottom: 30px;
   margin-bottom: 50px;
   border-radius: 4px;
   border: none;
+  width: 73px;
+  height: 38px;
+  left: 495px;
+  top: 174px;
 }
 .button-item {
   margin-right: 8px;
