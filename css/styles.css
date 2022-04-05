@@ -353,7 +353,7 @@ padding-bottom: 94px;
 margin-right: 30px;
 margin-bottom: 30px;
 }
-.portfolio-item:nth-child(3) {
+.portfolio-item:nth-child(3n) {
   margin-right: 0px;
 }
 .portfolio-item:nth-last-child(-n + 3) {
